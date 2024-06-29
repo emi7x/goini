@@ -16,7 +16,7 @@ import "github.com/emi7x/goini"
 func main() {
     parser, err := goini.New(".", "path", "to", "file")
     if err != nil {
-        // error check here
+        // error handle here
     }
 }
 ```
