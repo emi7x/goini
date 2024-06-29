@@ -71,6 +71,30 @@ func main() {
 }
 ```
 
+### Reloading the ini parser
+
+If you want to reload the ini parser;
+
+```go
+package main
+
+import "github.com/emi7x/goini"
+
+func main() {
+    parser, err := goini.New(".", "path", "to", "file")
+    if err != nil {
+        // error handle here
+    }
+
+    if err := parser.ReloadKeys(); err != nil {
+        // error handle here
+    }
+
+    // Display the item as a string format instead of a string pointer.
+    println(*item)
+}
+```
+
 ## Features
 
 GoIni supports both `#` and `;` comments, as well as ini sections. It will ignore empty lines as well as comments.
