@@ -89,7 +89,7 @@ func (c *Content) newSection(name string, data ...string) error {
 		// Check if the row is a section header.
 		if strings.Contains(row, "[") && strings.Contains(row, "]") {
 			// Create the new section.
-			return c.newSection(strings.Split(strings.Split(row, "[")[1], "]")[0], data[i:]...)
+			return c.newSection(strings.Split(strings.Split(row, "[")[1], "]")[0], data[i+1:]...)
 		}
 
 		// Split the row by the key and value.
