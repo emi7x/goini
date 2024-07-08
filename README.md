@@ -1,4 +1,4 @@
-# GoIni [![Go Report Card](https://goreportcard.com/badge/github.com/emi7x/goini)](https://goreportcard.com/report/github.com/emi7x/goini)
+# GoIni [![Go Report Card](https://goreportcard.com/badge/github.com/mt6x/goini)](https://goreportcard.com/report/github.com/mt6x/goini)
 
 GoIni is a minimalistic ini parser written in golang.
 
