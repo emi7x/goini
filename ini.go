@@ -45,9 +45,7 @@ func (c *Content) parseKeys(data []string) error {
 		}
 
 		// Get the key and value from the rows.
-		var (
-			key, value string = content[0], content[1]
-		)
+		var key, value string = content[0], content[1]
 
 		// Check if the key has already been defined.
 		if _, ok := c.keys[key]; ok {
@@ -101,9 +99,7 @@ func (c *Content) newSection(name string, data ...string) error {
 		}
 
 		// Get the key and value from the rows.
-		var (
-			key, value string = content[0], content[1]
-		)
+		var key, value string = content[0], content[1]
 
 		// Check if the key has already been defined.
 		if _, ok := c.keys[key]; ok {
