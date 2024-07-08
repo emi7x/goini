@@ -11,7 +11,7 @@ When creating a new ini parser, the function returns two values; the ini parser,
 ```go
 package main
 
-import "github.com/emi7x/goini"
+import "github.com/mt6x/goini"
 
 func main() {
     parser, err := goini.New(".", "path", "to", "file")
@@ -30,7 +30,7 @@ If you want to fetch an element from the parsed file that is not in a section;
 ```go
 package main
 
-import "github.com/emi7x/goini"
+import "github.com/mt6x/goini"
 
 func main() {
     parser, err := goini.New(".", "path", "to", "file")
@@ -53,7 +53,7 @@ And if you want to fetch an item from a section;
 ```go
 package main
 
-import "github.com/emi7x/goini"
+import "github.com/mt6x/goini"
 
 func main() {
     parser, err := goini.New(".", "path", "to", "file")
@@ -78,7 +78,7 @@ If you want to reload the ini parser;
 ```go
 package main
 
-import "github.com/emi7x/goini"
+import "github.com/mt6x/goini"
 
 func main() {
     parser, err := goini.New(".", "path", "to", "file")
